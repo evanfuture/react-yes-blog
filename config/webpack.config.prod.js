@@ -2,6 +2,7 @@
 
 const autoprefixer = require('autoprefixer');
 const path = require('path');
+const utils = require('./utils');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -331,9 +332,8 @@ module.exports = {
       [
         '/',
         '/banana',
-        '/blog/',
-        '/blog/first-article',
-        '/blog/second-article',
+        '/blog',
+        ...utils.filesToRoutes('../src/posts', '.md', '/blog'),
       ]
     ),
     // Moment.js is an extremely popular library that bundles large locale files
