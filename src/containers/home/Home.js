@@ -10,6 +10,7 @@ const Home = () => (
       <h1 className="App-title">Welcome to React</h1>
     </header>
     <hr />
+    <Link to="/blog">Blog</Link>
     <Link to="/banana">Banana</Link>
   </div>
 );

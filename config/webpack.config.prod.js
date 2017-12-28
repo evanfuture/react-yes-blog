@@ -331,6 +331,9 @@ module.exports = {
       [
         '/',
         '/banana',
+        '/blog/',
+        '/blog/first-article',
+        '/blog/second-article',
       ]
     ),
     // Moment.js is an extremely popular library that bundles large locale files

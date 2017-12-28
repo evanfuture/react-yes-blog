@@ -3,6 +3,8 @@ import { Route } from 'react-router-dom';
 
 import Home from './containers/home/Home';
 import Banana from './containers/banana/Banana';
+import YesBlog from './containers/yes-blog/YesBlog';
+import YesArticle from './containers/yes-article/YesArticle';
 
 export const routes = [
   {
@@ -12,6 +14,14 @@ export const routes = [
   {
     path: '/banana',
     component: Banana,
+  },
+  {
+    path: '/blog',
+    component: YesBlog,
+  },
+  {
+    path: '/blog/:id',
+    component: YesArticle,
   },
 ];
 

@@ -1,0 +1,5 @@
+@import '../../assets/highlight_theme.css';
+
+.article__body {
+  text-align: left;
+}

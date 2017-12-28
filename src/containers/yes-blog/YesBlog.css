@@ -1,0 +1,13 @@
+.article__link {
+    padding: 0 20px;
+    text-decoration: none;
+
+    &:hover .article__title {
+        text-decoration: underline;
+    }
+}
+
+.article__title,
+.article__description {
+    margin: 0;
+}
