@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { routes, RouteWithSubRoutes } from './routes';
 import './index.css';
-import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <Router>
+    <div>{routes.map((route, i) => <RouteWithSubRoutes key={i} {...route} />)}</div>
+    </Router>,
+    document.getElementById('root'),
+);
 registerServiceWorker();
