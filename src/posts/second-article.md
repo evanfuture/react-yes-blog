@@ -28,4 +28,4 @@ And then some code:
 
 Here's an image:
 
-![alt text](/static/img/icons/android-chrome-192x192.png "testing")
+![alt text](/images/logo.svg "testing")
