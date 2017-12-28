@@ -1,12 +1,14 @@
+/* eslint-disable react/no-danger */
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import './YesArticle.css';
 
-const YesArticle = () => {
-  const article = {
-    title: this.id,
-    body: '<h2>Testing</h2><p>Ok, let\'s do more now!</p>',
-  }
+type Props = {
+  match: string,
+};
+
+const YesArticle = ({ match }: Props) => {
+  const article = require(`../../posts/${match.params.id}.md`); // eslint-disable-line
   return (
     <div className="App">
     <header className="App-header">
